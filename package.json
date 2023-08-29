@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bartosz-baranski.github.io/goit-js-hw-09"
+    "url": "git+https://github.com/Bartosz-Baranski/goit-js-hw-09"
   },
   "keywords": [],
   "author": "Bartosz Barański <bartosz.baranski1990@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://bartosz-baranski.github.io/goit-js-hw-09/issues"
+    "url": "https://github.com/Bartosz-Baranski/goit-js-hw-09/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"

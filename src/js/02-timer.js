@@ -15,7 +15,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     futureDate = selectedDates[0];
-    if (futureDate.getTime() < new Date().getTime()) {
+    if (selectedDates[0] < new Date()) {
       Notiflix.Notify.warning('Please choose a date in the future');
       btnStart.disabled = true;
       return;
@@ -64,7 +64,8 @@ btnStart.addEventListener('click', function () {
   const future = new Date(futureDate);
 
   setInterval(function () {
-    const now = new Date();
+    const now = new Date().getTime();
+    const future = new Date(futureDate).getTime();
     const distance = future - now;
     if (distance <= 0) {
       return;

@@ -11,7 +11,7 @@ let futureDate;
 const options = {
   enableTime: true,
   time_24hr: true,
-  defaultData: new Date(),
+  defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
     futureDate = selectedDates[0];
